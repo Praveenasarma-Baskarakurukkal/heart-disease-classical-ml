@@ -1,0 +1,155 @@
+
+Brought to you by:Library, University of Moratuwa
+Elsevier logo
+Journals & Books
+
+Help
+Search
+My account
+
+University of Moratuwa
+Search ScienceDirect
+Search ScienceDirect
+
+University of Moratuwa does not subscribe to this content on ScienceDirect.
+
+Article preview
+Abstract
+Introduction
+Section snippets
+References (48)
+Elsevier
+Computers in Biology and Medicine
+Volume 197, Part B, October 2025, 111027
+Computers in Biology and Medicine
+Impact of feature selection and feature engineering in prediction of cardiovascular diseases
+Author links open overlay panel
+Divya Yadav a
+, 
+Deepika Rani a
+, Om Prakash Verma b
+
+Show more
+
+Add to Mendeley
+
+Share
+
+Cite
+https://doi.org/10.1016/j.compbiomed.2025.111027
+Get rights and content
+Highlights
+•
+Key feature selection in multi-heart disease dataset using RF.
+•
+Transformed into more reliable new features using feature engineering.
+•
+Improved predictive performance using several machine and ensemble learning.
+•
+Compared performance using feature selection and engineering.
+Abstract
+Heart disease remains a leading cause of death worldwide, presenting major challenges to public health. As a complex cardiovascular disorder (CVD), it often leads to life threatening complications such as heart attacks, strokes, and heart failure. Early and accurate diagnosis is essential for reducing fatality rates and ensuring better clinical results. While ML models have shown great potential in identifying cardiovascular diseases but their effectiveness heavily depends on optimal feature selection and engineering. This study presents a novel approach integrating feature selection and feature engineering techniques to enhance heart disease prediction using ML classifiers. Firstly, four key attributes were selected from a combined heart disease prediction dataset using RF model. Subsequently, a feature engineering technique have been applied to generate thirty six new features through basic arithmetic operations, strengthening dataset to improve predictive efficiency. These newly generated features have been utilized to train ML classifiers. To further enhance the classification accuracy, an ensemble learning approach based on soft voting have been applied to mitigate the impact of weaker classifiers. The effectiveness of the proposed methodology have been evaluated by comparing model performance with and without feature selection and engineering. The RF model achieved superior classification results, with accuracy, precision, recall, F1-score, AUC-ROC, and Jaccard score reaching 96.56%, 97.83%, 95.26%, 96.53%, 99.55%, 93.29% for RF model, respectively. Similarly, with feature engineering technique, the DT model attained 95.23%, 94.32%, 96.31%, 95.31%, 96.14%, 91.04%, respectively. Notably, RF and DT models demonstrated superior performance incorporating feature selection and engineering techniques. The present study shows high disease prediction accuracy as compared to various feature selection techniques and also, shows the significance of feature engineering in enhancing ML models, enabling medical professionals to diagnose diseases more effectively and at earlier stages.
+Introduction
+The rapid pace of urbanization has significantly contributed to the rise of chronic diseases, posing a serious threat to global public health. Among these, cardiovascular disease (CVD), commonly referred to as heart disease, stands out as a leading concern. As per the world health organization (WHO) report, CVD is responsible for approximately 19.1 million deaths every year, accounting for 33% of all global fatalities [1]. Among these, ischemic heart disease and stroke are leading causes, contributing to 9.1 million and 6.6 million deaths respectively [2], [3]. Specifically, in developing countries, the people who are residing in rural areas face serious challenges with CVDs due to poor healthcare infrastructure, like limited access to diagnosis, lack of trained medical staff and awareness. Additionally, factors such as unhealthy lifestyle choices, lack of awareness about preventive measures, and delayed medical intervention further contribute to the escalating prevalence of CVDs [4].
+Heart diseases encompass a wide range of disorders that affect the structure and function of heart, including infections, genetic abnormalities, blood vessel diseases, and heart valve conditions. These disorders impacts the heart’s ability to pump or circulate an adequate supply of blood to various parts of the body. Risk factors such as smoking, high cholesterol levels, hypertension, diabetes, sedentary behavior, obesity, and chronic stress significantly increase the likelihood of developing heart disease [5], [6], [7]. Urbanization and dietary changes, including the consumption of processed foods and reduced physical activity, have further fueled the epidemic. Some people experience symptoms like chest pain and fatigue, others may remain asymptomatic until a major event occurs and shows the need for vigilant monitoring. Diagnostic methods include angiography, blood pressure monitoring, echocardiograms, electrocardiographs (ECG), and myocardial perfusion scans [8]. In present scenario, generally the early disease diagnosis relies only on doctor’s expertise and observations, which can be limited by subjective judgment and hidden patterns within the data. Despite the vast amounts of healthcare data available, traditional methods may overlook critical factors, leading to potentially inaccurate outcomes. This highlights the need for advanced, automated diagnostic mechanisms to improve accuracy.
+Thanks to advancements in medical technology, data-driven healthcare, and artificial intelligence (AI) which have been created significant opportunities to transform the prevention, diagnosis, and treatment of CVD. Specifically, machine learning (ML) and deep learning (DL) techniques, known for their ability to identify hidden patterns in complex data, have been demonstrated remarkable potential in addressing intricate medical challenges [9], [10], [11]. Motivated by these advancements, various ML and DL frameworks have been developed in recent years for the early detection of CVD. These include methods such as logistic regression (LR), artificial neural networks (ANN), linear discriminant analysis (LDA), Naive Bayes (NB), support vector machines (SVM), decision trees (DT), adaboost (AB), gradient boosting (GB), k-nearest neighbors (k-NN), quadratic discriminant analysis (QDA), random forests (RF), and multi-layer perceptron (MLP), convolution neural network (CNN) [12]. These approaches are often combined with dimensionality reduction techniques, outlier elimination, linear interpolation for missing values, feature selection, and feature engineering to improve model performance. Several studies have proposed innovative approaches to improve CVD prediction. For dimension reduction, Wang et al. [1] have been introduced a novel strategy combined with data partitioning techniques, evaluating its effectiveness across 12 different classifier. Javid et al. [13] have been utilized the UCI heart disease dataset to evaluate traditional ML techniques (e.g., RF, SVM, KNN) and DL models (e.g., LSTM, GRU). Further, they explored voting-based ensemble methods to enhance prediction accuracy of weaker algorithms. Hybrid models and optimization algorithms have also contributed significantly to advancing early CVD detection. Mohan et al. [14] have been developed a hybrid model combining RF and a linear model, achieving improved accuracy on the Cleveland heart disease dataset with 13 attributes. Similarly, Kodati et al. [15] used Orange and Weka data-mining tools to compare various classifiers and offered valuable insights into heart disease prediction. Janarthanan et al. [16] have been proposed a novel hybrid classifier (HybBPF-ELM) which utilizes a firefly optimization algorithm within encryption-decryption framework and achieved remarkable accuracy in CVD prediction.
+Feature engineering and feature selection play a pivotal role in enhancing the performance of ML models. Feature engineering focusses on transforming raw data into meaningful inputs through techniques like scaling, encoding, creating new features, thereby helping models to recognize hidden patterns more effectively. Feature selection focuses on identifying the most relevant features, reducing dimensionality, and eliminating redundant or irrelevant data. Together, these processes improve efficiency, accuracy, and the predictive power of ML models. Moreover, PCA [17], [18], [19] and SVM [20] are other advanced feature selection techniques used for the selection of most relevant features and applied for CVD prediction. Gárate-Escamila et al. [21] achieved an accuracy of 98.7% using RF classifier combined with chi-square feature selection and PCA. Vijayashree et al. [20] utilized a PSO algorithm alongside a SVM classifier for feature selection and achieved 88.22% accuracy on the Cleveland heart disease dataset. Further, Gazeloglu et al. [22] have been applied 18 ML classifiers with 3 different feature selection techniques on same dataset. Spencer et al. [23] have been proposed three different feature selection approaches across four common CVD dataset and obtained 85.00% accuracy utilizing combination of Chi-squared and BayesNet algorithm. Researchers have been used ensemble techniques to combine multiple ML classifier to further improving accuracy of CVD [24], [25], [26]. Latha et al. [27] improved the performance of weak algorithms through majority voting with NB, BN, RF, and MLP, achieving 85.48% accuracy with feature selection. Moreover, combining datasets with shared attributes has been a promising strategy for improving model performance. For instance, multiple heart disease dataset has been integrated to create larger and more comprehensive dataset [28], [29]. In 2024 a new dataset [30] have been created combining five heart disease datasets with 14 common attributes. Further, DT and MLP classifiers have been applied on newly created dataset and achieved an accuracy of 92.33% with a high F1-score 92.33%, applying DT and MLP classifiers to achieve an accuracy of 92.33% and a high F1-score. Asif et al. [31] merged three heart disease dataset from Kaggle and utilized grid search cross validation with hyperparameter optimization on four (RF, Extra Tree classifier, XGBoost, CatBoots) ML models. Among these, extra tree classifier performed well and attained 98.15% accuracy and 98.10% F1-score.
+From the above discussion it is evident that feature selection is a very crucial stage in improving the effectiveness of ML models in prediction heart disease [32]. While ML models have shown remarkable success in early classification and heart disease detection, achieving optimal results still requires careful selection of attributes from the dataset to reduce training costs. Feature selection is a complex yet vital task in ML, as selecting the right features can help in several ways, including addressing dimensionality issues, reducing overfitting, tackling data quality problems, and improving model accuracy [1]. Consequently, feature engineering, which involves transforming, creating, and selecting features from raw data, plays a significant role in the overall process. This technique not only aids in data preprocessing but also enables the generation of new, more informative features that enhance both the performance and interpretability of ML models. In this study, feature selection techniques have been employed to identify the most relevant features using the RF model. Subsequently, new features have been derived from these selected attributes through feature engineering techniques, leading to impressive performance on a combined dataset, which was further optimized using 8 classifiers and ensemble learning methods. Therefore, the key contribution of this study as follows:
+•
+Feature selection using RF: In the present study, RF model has been employed on a combined heart disease prediction dataset to identify the most important features. Based on extracted feature importance, the four attributes with the highest scores have been selected.
+•
+Feature engineering for enhanced representation: The four selected attributes have been processed using feature engineering techniques. By applying a combinatorial formula, six distinct attribute pairs have been formed. For each pair, the minimum and maximum values were calculated, and fundamental mathematical operations were utilized to generate additional features that resulted in a total of 36 new features.
+•
+Model training and ensemble learning: The newly created features have been utilized as input for eight ML classifiers. Further, ensemble learning (soft voting) have been applied to the outputs of these classifiers to further improve prediction accuracy. The performance of these classifiers have been evaluated using various metrics, including accuracy, precision, recall, F1-score, AUC-ROC, and Jaccard score.
+•
+Comparative performance analysis: The performance of the models with and without feature selection and feature engineering have been compared. Additionally, the results were analyzed against existing literature to provide a comprehensive understanding of the proposed model’s effectiveness.
+The rest of article comprises as follows: The next section outlines the proposed framework for this present study. In this details of dataset, data preprocessing, feature selection, feature engineering, classifiers have been given. Subsequent section focuses on experimental setup and results of binary classification, comparing scenarios with and without feature selection and engineering. Afterwords, discussion and future scope comes under consideration. Finally, the conclusion section summarizes the key outcomes of the study.
+Section snippets
+Proposed framework
+This section presents the details of heart disease prediction dataset, methodology of feature selection and feature engineering techniques, various classifier, and ensemble learning for classification of CVD in patients. Also, the flowchart of this study have been presented in Fig. 1.
+Experimental results
+In this section, hyperparameter tunning and results of the above experiment with and without feature engineering have been considered for classification of CVD. The customized data (obtained data after feature engineering and feature selection) have been divided in 80% and 20% for training and testing respectively. A total of 1888 samples have been chosen for binary classification (no disease and disease). After splitting the data, 5-fold cross-validation have been employed and results of test
+Conclusion
+In heart disease prediction, early detection is essential, as it enables timely interventions, improves patient prognosis, and reduces mortality rates. Accurate identification of CVD at an early stage can significantly enhance treatment effectiveness and lower healthcare burdens. The present work successfully demonstrate the capability of proposed feature engineering technique for accurately predicting CVD in patients. Based on the developed classification model and their analysis, the
+CRediT authorship contribution statement
+Divya Yadav: Writing – review & editing, Writing – original draft, Validation, Supervision, Software, Methodology, Data curation, Conceptualization. Deepika Rani: Writing – review & editing, Visualization, Validation, Supervision. Om Prakash Verma: Writing – review & editing, Writing – original draft, Visualization, Validation, Supervision, Conceptualization.
+Funding
+Not applicable.
+Declaration of competing interest
+The authors declare that they have no conflicts of interest regarding the publication of this research. They have received no financial support or other benefits from any commercial entity related to the subject matter discussed in this manuscript.
+References (48)
+S. Wang et al.
+Optimization of multidimensional feature engineering and data partitioning strategies in heart disease prediction models
+Alex. Eng. J.
+(2024)
+S.M.S. Shah et al.
+Feature extraction through parallel probabilistic principal component analysis for heart disease diagnosis
+Phys. A
+(2017)
+I.D. Mienye et al.
+An improved ensemble learning approach for the prediction of heart disease risk
+Informat. Med. Unlocked
+(2020)
+A.K. Gárate-Escamila et al.
+Classification models for heart disease prediction using feature selection and PCA
+Informat. Med. Unlocked
+(2020)
+C.B.C. Latha et al.
+Improving the accuracy of prediction of heart disease risk based on ensemble classification techniques
+Informat. Med. Unlocked
+(2019)
+S. Wang et al.
+Optimization of multidimensional feature engineering and data partitioning strategies in heart disease prediction models
+Alex. Eng. J.
+(2024)
+W. WHO
+The top 10 causes of death
+(2020)
+J.-m. Kwon et al.
+Deep learning for predicting in-hospital mortality among heart disease patients based on echocardiography
+Echocardiography
+(2019)
+K. Saxena et al.
+Efficient heart disease prediction system
+Procedia Comput. Sci.
+(2016)
+D. Mozaffarian et al.
+Beyond established and novel risk factors: lifestyle risk factors for cardiovascular disease
+Circulation
+(2008)
+
+View more references
+Cited by (0)
+View full text
+© 2025 Elsevier Ltd. All rights are reserved, including those for text and data mining, AI training, and similar technologies.
+
+Recommended articles
+Heart disease prediction using supervised machine learning algorithms: Performance analysis and comparison
+Computers in Biology and Medicine, Volume 136, 2021, Article 104672
+Md Mamun Ali, …, Mohammad Ali Moni
+Enhanced cardiovascular disease prediction model using random forest algorithm
+Informatics in Medicine Unlocked, Volume 41, 2023, Article 101316
+Kellen Sumwiza, …, Peace Bamurigire
+Empirical analysis of predicting heart disease using diverse datasets and classification procedures of machine learning
+Ain Shams Engineering Journal, Volume 16, Issue 8, 2025, Article 103470
+Geetha Narasimhan, Akila Victor
+
+Show 3 more articles
+
+Article Metrics
+Captures
+Mendeley Readers
+18
+PlumX Metrics Logo
+View details
+Elsevier logo with wordmark
+About ScienceDirect
+Remote access
+Contact and support
+Terms and conditions
+Privacy policy
+Cookie settings
+All content on this site: Copyright © 2026 Elsevier B.V., its licensors, and contributors. All rights are reserved, including those for text and data mining, AI training, and similar technologies. For all open access content, the relevant licensing terms apply.
+
+RELX group home page
+Feedback

@@ -1,0 +1,49 @@
+Individual Research Task: Introduction to Machine Learning CS3111
+
+You need required to complete an individual research project based on a classical machine learning task using a given dataset. Deep learning methods are not permitted.
+There are paper citing the given dataset given
+
+
+Task Requirements
+
+For the given dataset,
+Dataset Link: https://archive.ics.uci.edu/ml/datasets/Heart+Disease
+Primary Improvement Direction: Feature engineering, imbalance handling		
+						
+											
+
+Study the given benchmark or reference paper related to the selected task.
+Reproduce the baseline results reported in the reference paper using classical ML methods.
+
+Propose and implement well-justified improvements, such as:
+Improved data preprocessing or feature engineering
+Better model selection or ensemble methods
+Hyperparameter optimization
+Handling class imbalance or noise
+Evaluate models using appropriate performance metrics and proper validation techniques.
+
+
+High-quality submissions may be extended and submitted to student conferences or workshops under instructor supervision.
+
+You need to submit your code and the research paper
+The short paper must be written using LaTeX and adhere to the IEEE conference paper guidelines given. This paper should be 8 pages in length. 
+
+
+In the paper you have to include:
+
+An appropriate title reflecting your chosen methodology
+
+Abstract
+
+Introduction and background
+
+Related work
+
+Method: Should describe all the methods used by the team members and an evaluation & selection of the best approach with adequate justification
+
+Results
+
+Discussion: Here you have to discuss, interpret, and explain your results and possible ways you can improve it
+
+Conclusion
+

@@ -1,0 +1,82 @@
+{
+  "dataset_source": "C:\\New Volume D\\University\\Semester 08\\CS3111 - Introduction to Machine Learning\\Mini-Project\\heart+disease\\processed.cleveland.data",
+  "baseline_best": {
+    "model_name": "KNN",
+    "variant": "none",
+    "accuracy": 0.9180327868852459,
+    "balanced_accuracy": 0.9188311688311688,
+    "precision": 0.896551724137931,
+    "recall": 0.9285714285714286,
+    "f1": 0.9122807017543859,
+    "roc_auc": 0.9626623376623376
+  },
+  "baseline_cv_best": {
+    "model_name": "Logistic Regression",
+    "variant": "none",
+    "cv_mean_accuracy": 0.8470238095238095,
+    "cv_std_accuracy": 0.021594956566396217,
+    "cv_mean_balanced_accuracy": 0.841897233201581,
+    "cv_std_balanced_accuracy": 0.017356613008694913,
+    "cv_mean_precision": 0.8783262504086302,
+    "cv_std_precision": 0.07089870442894844,
+    "cv_mean_recall": 0.7837944664031621,
+    "cv_std_recall": 0.033715206501400995,
+    "cv_mean_f1": 0.8253529352696442,
+    "cv_std_f1": 0.015038219310732187,
+    "cv_mean_roc_auc": 0.9064947130164521,
+    "cv_std_roc_auc": 0.01916608403837501
+  },
+  "benchmark_comparable_random_forest": {
+    "model_name": "Random Forest",
+    "variant": "none",
+    "accuracy": 0.9016393442622951,
+    "balanced_accuracy": 0.9063852813852814,
+    "precision": 0.84375,
+    "recall": 0.9642857142857143,
+    "f1": 0.9,
+    "roc_auc": 0.9393939393939394
+  },
+  "improved_best": {
+    "model_name": "Soft Voting Ensemble",
+    "variant": "improved",
+    "accuracy": 0.8852459016393442,
+    "balanced_accuracy": 0.8885281385281385,
+    "precision": 0.8387096774193549,
+    "recall": 0.9285714285714286,
+    "f1": 0.8813559322033898,
+    "roc_auc": 0.9599567099567099
+  },
+  "best_ablation_cv": {
+    "model_name": "Class Weights Only",
+    "variant": "ablation",
+    "accuracy": 0.8688524590163934,
+    "balanced_accuracy": 0.8733766233766234,
+    "precision": 0.8125,
+    "recall": 0.9285714285714286,
+    "f1": 0.8666666666666667,
+    "roc_auc": 0.9523809523809524,
+    "cv_mean_accuracy": 0.8511904761904763,
+    "cv_std_accuracy": 0.04019870010139875,
+    "cv_mean_balanced_accuracy": 0.849346305868045,
+    "cv_std_balanced_accuracy": 0.035457130423410144,
+    "cv_mean_precision": 0.8527272727272728,
+    "cv_std_precision": 0.09502500758282371,
+    "cv_mean_recall": 0.8371541501976285,
+    "cv_std_recall": 0.04760508176092436,
+    "cv_mean_f1": 0.8397424399981943,
+    "cv_std_f1": 0.03294898940851423,
+    "cv_mean_roc_auc": 0.9097102575363445,
+    "cv_std_roc_auc": 0.010036067430706822
+  },
+  "notes": [
+    "processed.cleveland.data is used because the provided WARNING file marks cleveland.data as corrupted.",
+    "Binary classification follows the original UCI convention: num > 0 indicates presence of heart disease.",
+    "Feature-selection settings in the benchmark paper are under-specified, so the reproduction uses a standard SelectKBest top-8 setup.",
+    "Cross-validation for baseline characterization and hyperparameter tuning is performed on the training partition only; the holdout test partition remains untouched until final evaluation."
+  ],
+  "available_detail_files": [
+    "results/baseline_detailed_results.json",
+    "results/improved_summary.json",
+    "results/dataset_summary.json"
+  ]
+}

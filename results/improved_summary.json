@@ -1,0 +1,76 @@
+{
+  "best_model_name": "Soft Voting Ensemble",
+  "top_two_cv_models": [
+    "Balanced Logistic Regression",
+    "Balanced SVM"
+  ],
+  "holdout_best_metrics": {
+    "model_name": "Soft Voting Ensemble",
+    "variant": "improved",
+    "accuracy": 0.8852459016393442,
+    "balanced_accuracy": 0.8885281385281385,
+    "precision": 0.8387096774193549,
+    "recall": 0.9285714285714286,
+    "f1": 0.8813559322033898,
+    "roc_auc": 0.9599567099567099
+  },
+  "best_model_confusion_matrix": [
+    [
+      28,
+      5
+    ],
+    [
+      2,
+      26
+    ]
+  ],
+  "best_model_report": {
+    "0": {
+      "precision": 0.9333333333333333,
+      "recall": 0.8484848484848485,
+      "f1-score": 0.8888888888888888,
+      "support": 33.0
+    },
+    "1": {
+      "precision": 0.8387096774193549,
+      "recall": 0.9285714285714286,
+      "f1-score": 0.8813559322033898,
+      "support": 28.0
+    },
+    "accuracy": 0.8852459016393442,
+    "macro avg": {
+      "precision": 0.886021505376344,
+      "recall": 0.8885281385281385,
+      "f1-score": 0.8851224105461393,
+      "support": 61.0
+    },
+    "weighted avg": {
+      "precision": 0.8898995240613432,
+      "recall": 0.8852459016393442,
+      "f1-score": 0.8854311382791517,
+      "support": 61.0
+    }
+  },
+  "best_model_bootstrap_intervals": {
+    "accuracy": {
+      "mean": 0.8850983606557377,
+      "ci_lower": 0.8032786885245902,
+      "ci_upper": 0.9508196721311475
+    },
+    "balanced_accuracy": {
+      "mean": 0.8881322611645749,
+      "ci_lower": 0.8023595066841035,
+      "ci_upper": 0.9583333333333333
+    },
+    "f1": {
+      "mean": 0.8797011701974793,
+      "ci_lower": 0.7777210884353741,
+      "ci_upper": 0.9565217391304348
+    },
+    "roc_auc": {
+      "mean": 0.9594867216349885,
+      "ci_lower": 0.9,
+      "ci_upper": 0.9989106753812635
+    }
+  }
+}

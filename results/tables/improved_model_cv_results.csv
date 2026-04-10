@@ -1,0 +1,4 @@
+model_name,best_params,cv_mean_f1,cv_std_f1,cv_mean_balanced_accuracy,cv_std_balanced_accuracy,cv_mean_roc_auc,cv_std_roc_auc
+Balanced Logistic Regression,"{""model__C"": 0.5, ""model__penalty"": ""l1""}",0.8334745482851347,0.04590167581035905,0.8444968075402859,0.046318488234725626,0.9085120998164478,0.013306797166905917
+Balanced SVM,"{""model__C"": 0.5, ""model__gamma"": ""scale""}",0.8157318543076777,0.021232026304270415,0.8338096685922773,0.016128555470741674,0.8876766550679595,0.012778744855618319
+Balanced Random Forest,"{""model__max_depth"": 4, ""model__max_features"": ""sqrt"", ""model__min_samples_leaf"": 2, ""model__n_estimators"": 300}",0.8106490356833606,0.025939193973593136,0.8296042926477709,0.022605503721072423,0.8984589484589485,0.013798261586839675
